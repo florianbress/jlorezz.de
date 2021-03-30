@@ -48,16 +48,16 @@
 </template>
 
 <script>
-import { computed, ref, defineComponent } from 'vue';
-import router from '@/router/index.ts';
+import { computed, ref, defineComponent } from "vue";
+import router from "@/router/index.ts";
 
 export default defineComponent({
-	name: 'Menu',
+	name: "Menu",
 	props: { menuhide: Boolean },
 	setup(props, { emit }) {
 		const path = ref(router.currentRoute.value.name);
 		const istoggled = computed({
-			get: () => props['menuhide'],
+			get: () => props["menuhide"],
 			set: value => emit(`toggle`, value),
 		});
 
