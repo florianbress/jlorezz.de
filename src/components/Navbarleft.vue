@@ -15,15 +15,15 @@
 </template>
 
 <script>
-import { defineComponent, onMounted, ref } from 'vue';
-import Menu from './Menu';
+import { defineComponent, onMounted, ref } from "vue";
+import Menu from "./Menu";
 
 export default defineComponent({
-	name: 'Navbarleft',
+	name: "Navbarleft",
 	components: { Menu },
 	setup() {
 		const showleftnav = ref(false);
-		window.addEventListener('scroll', function () {
+		window.addEventListener("scroll", function () {
 			showleftnav.value = window.scrollY > 400;
 		});
 

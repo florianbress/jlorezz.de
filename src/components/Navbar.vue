@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import { onMounted, ref, defineAsyncComponent, defineComponent } from 'vue';
+import { onMounted, ref, defineAsyncComponent, defineComponent } from "vue";
 export default defineComponent({
-	name: 'Navbar',
+	name: "Navbar",
 	components: {
-		Menu: defineAsyncComponent(() => import('@/components/Menu.vue')),
+		Menu: defineAsyncComponent(() => import("@/components/Menu.vue")),
 	},
 	setup() {
 		const isloaded = ref(false);
@@ -97,6 +97,7 @@ export default defineComponent({
 	height: 2px;
 	width: 100%;
 	align-self: center;
+
 	border: none;
 	background: #e5d8c7;
 }
