@@ -29,7 +29,7 @@
 				<p>These are some of my personal favourite projects</p>
 			</div>
 		</div>
-		<Projects class="pjs" />
+		<ProjectPanels class="pjs" />
 		<Footer class="ftr" />
 	</div>
 </template>
@@ -38,14 +38,14 @@
 import { defineComponent } from "vue";
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import Projects from "@/components/Projects.vue";
+import ProjectPanels from "@/components/ProjectPanels.vue";
 
 export default defineComponent({
 	name: "Home",
 	components: {
 		Navbar,
 		Footer,
-		Projects,
+		ProjectPanels,
 	},
 });
 </script>
@@ -57,6 +57,7 @@ export default defineComponent({
 	left: 0;
 }
 .ftr {
+	padding-top: 15%;
 	position: relative;
 }
 .header-wrapper {
@@ -103,9 +104,10 @@ export default defineComponent({
 	font-family: quest, sans-serif;
 }
 .title-wrapper {
+	padding-top: 15%;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 40% 40% 20%;
+	grid-template-columns: 40% 35% 20%;
 }
 .title-wrapper p {
 	color: #e5d8c7;

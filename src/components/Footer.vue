@@ -153,6 +153,8 @@ export default defineComponent({
 	display: grid;
 	align-content: center;
 	justify-items: center;
+
+	padding: 5%;
 }
 
 .img-wrapper img {
