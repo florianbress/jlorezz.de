@@ -60,16 +60,18 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped lang="scss">
 .project-wrapper {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
+
 .nitroleague {
 	padding-left: 15%;
 	align-self: center;
 }
+
 .nitroleague .nimg {
 	width: 50%;
 }
@@ -78,6 +80,7 @@ export default defineComponent({
 	padding-left: 15%;
 	align-self: center;
 }
+
 .acrysbot .aimg {
 	width: 50%;
 }
@@ -87,21 +90,26 @@ export default defineComponent({
 	padding-left: 15%;
 	align-self: center;
 }
+
 .dachmans .dimg {
 	width: 50%;
 }
+
 .minkz {
 	padding-left: 15%;
 	align-self: center;
 }
+
 .minkz .mimg {
 	width: 50%;
 }
+
 .title {
 	padding-top: 2%;
 	color: #e5d8c7;
 	font-family: quest, sans-serif;
 }
+
 .description {
 	color: #e5d8c7;
 	font-family: quest;

@@ -4,15 +4,15 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-import NavbarLeft from './components/Navbarleft';
+import { ref } from "vue";
+import NavbarLeft from "./components/Navbarleft";
 
 export default {
 	components: { NavbarLeft },
-	name: 'App',
+	name: "App",
 	setup() {
 		const showleftnav = ref(false);
-		window.addEventListener('scroll', function () {
+		window.addEventListener("scroll", function () {
 			showleftnav.value = window.scrollY > 600;
 		});
 
